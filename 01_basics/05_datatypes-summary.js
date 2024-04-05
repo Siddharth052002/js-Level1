@@ -55,3 +55,29 @@ console.log(typeof myObj)
 // *** IMP *** (Is Javascript dynamically typed or statically typed language?)
 
 // Ans. Dynamically typed languages are those in which type checking takes place at the runtime or execution time. And this is done in JS. Therefore, JavaScript is a dynamically typed language.
+
+
+// +++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+// Stack Memory
+let myYoutubename = "sidVlogs"
+let anotherName = myYoutubename
+anotherName = "pandeyVlogs"
+
+console.log(myYoutubename)
+console.log(anotherName)
+
+
+// Heap Memory
+let userOne = {
+    email: "pandeysid@gmail.com",
+    age: 21
+}
+
+let userTwo = userOne
+userTwo.email = "sidpandey@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
