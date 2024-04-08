@@ -32,3 +32,18 @@ console.log(typeof newArr)
 
 
 // *** IMP: slice, splice ***
+
+// In slice original array is not changed, whereas in splice the things mentioned under splice is sliced out from the original array. Also, in case of splice end index is included which is not the case with slice.
+
+console.log("A ", myArr)
+
+const myn1 = myArr.slice(1,3)
+
+console.log(myn1)
+console.log("B ", myArr)
+
+const myn2 = myArr.splice(1, 3)
+console.log(myn2)
+console.log("C ", myArr)
+
+
